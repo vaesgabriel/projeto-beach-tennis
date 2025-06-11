@@ -8,7 +8,7 @@ Análise e modelagem preditiva de dados relacionados ao beach tennis, visando ex
 
 O projeto está hospedado no seguinte repositório GitHub:
 
-[https://github.com/seuusuario/projeto-beach-tennis](https://github.com/seuusuario/projeto-beach-tennis)
+[https://github.com/vaesgabriel/projeto-beach-tennis.git](https://github.com/vaesgabriel/projeto-beach-tennis.git)
 
 *(Substitua pelo link correto do seu repositório.)*
 
