@@ -10,8 +10,6 @@ O projeto está hospedado no seguinte repositório GitHub:
 
 [https://github.com/vaesgabriel/projeto-beach-tennis.git](https://github.com/vaesgabriel/projeto-beach-tennis.git)
 
-*(Substitua pelo link correto do seu repositório.)*
-
 ## Dataset Utilizado
 
 ### Origem
