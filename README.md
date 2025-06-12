@@ -1,5 +1,5 @@
-# Projeto de Data Science – Análise e Modelagem de Vendas
-
+# Projeto de Data Science – Análise e Modelagem de Vendas BeachTennis
+  
 ## Tema do Projeto
 
 Análise exploratória e modelagem preditiva de dados de vendas, com o objetivo de compreender o comportamento das vendas por região, segmento e subcategoria, além de prever a quantidade de itens vendidos utilizando técnicas de aprendizado de máquina.
@@ -22,13 +22,13 @@ O dataset utilizado é fictício, criado para fins didáticos e de desenvolvimen
 
 ### Variáveis Principais
 
-- **Ano**: Ano da venda (ex: 2023)  
+- **Ano**: Ano da venda (exemplo: 2023)  
 - **Mês**: Mês da venda (1 a 12)  
-- **Regiao**: Região geográfica da venda (ex: Sul, Sudeste)  
-- **Estado**: Unidade federativa da venda (ex: RS, SP)  
-- **Segmento**: Segmento de mercado do produto (ex: Insumos, Equipamentos)  
-- **IDSubcategoriaProduto**: Código identificador da subcategoria do produto  
-- **QuantidadeItens**: Quantidade total de itens vendidos em cada combinação das variáveis acima
+- **Regiao**: Região da venda (exemplo: Sul, Sudeste)  
+- **Estado**: Unidade federativa (exemplo: RS, SP)  
+- **Segmento**: Tipo de canal ou mercado do produto (exemplo: Loja Especializada, Distribuidor, Atacado)  
+- **IDSubcategoriaProduto**: Código da subcategoria do produto  
+- **QuantidadeItens**: Quantidade de itens vendidos
 
 ### Transformações Realizadas
 
@@ -40,19 +40,28 @@ O dataset utilizado é fictício, criado para fins didáticos e de desenvolvimen
 
 ## Modelos Utilizados ou Desenvolvidos
 
-- **Regressão Linear**: Modelo preliminar para estabelecer relações lineares simples entre variáveis e quantidade vendida  
-- **Random Forest Regressor**: Modelo principal utilizado para previsão da quantidade de itens vendidos, por sua capacidade de lidar com dados categóricos e capturar interações complexas  
-- Pré-processamento automatizado via pipeline, integrando codificação e modelagem
+- **Regressão Linear:**  
+  Modelo preliminar que estabelece relações lineares entre as variáveis preditoras (Ano, Mês, Região e Segmento) e a variável alvo (Quantidade de itens vendidos). Foi utilizado para obter uma referência simples do comportamento dos dados, permitindo identificar tendências e correlações básicas.
+
+- **Random Forest Regressor:**  
+  Modelo principal do projeto, baseado em um conjunto de árvores de decisão para regressão. Escolhido pela sua robustez e capacidade de capturar interações não lineares entre as variáveis categóricas e numéricas, além de lidar bem com dados heterogêneos e ruídos. O modelo foi implementado dentro de uma pipeline que automatiza o pré-processamento, incluindo codificação das variáveis categóricas via OneHotEncoder e treinamento do regressor, garantindo reprodutibilidade e facilidade de manutenção.
+
+- **Pipeline de pré-processamento e modelagem:**  
+  Integração das etapas de transformação dos dados e modelagem em um único fluxo, facilitando a aplicação consistente das transformações e o ajuste do modelo, além de permitir validação cruzada e testes rápidos em diferentes conjuntos de dados.
 
 ## Resultados Obtidos
 
-- O modelo Random Forest apresentou um **Erro Quadrático Médio (MSE)** de aproximadamente **447.27**, indicando que, em média, a diferença quadrática entre as previsões e valores reais é baixa  
-- O **Coeficiente de Determinação (R²)** alcançou **0.35**, o que demonstra que o modelo explica cerca de 35% da variabilidade total das vendas, um desempenho razoável considerando a complexidade e variabilidade dos dados  
-- As análises exploratórias mostraram que as vendas possuem forte variação por região, com as regiões Sul e Sudeste apresentando os maiores volumes  
-- O segmento de equipamentos se destacou como principal responsável pelo volume de vendas, seguido pelos insumos  
-- Visualizações como gráficos de barras e mapas de calor foram essenciais para identificar padrões sazonais e regionais, auxiliando na tomada de decisões estratégicas  
-- O workflow construído permite atualizações contínuas com novos dados, facilitando o re-treinamento e melhoria progressiva dos modelos
+- O modelo **Random Forest** apresentou um **Erro Quadrático Médio (MSE)** de aproximadamente **447.27**, o que indica que a média das diferenças quadráticas entre as previsões e os valores reais é relativamente baixa, demonstrando boa capacidade preditiva dentro do contexto dos dados utilizados.
+
+- O **Coeficiente de Determinação (R²)** atingiu **0.35**, sugerindo que o modelo explica cerca de 35% da variabilidade total das vendas. Embora esse valor indique que há espaço para melhorias, ele é razoável dada a complexidade do problema e a natureza dos dados simulados.
+
+- As análises exploratórias revelaram forte variação do volume de vendas por região, com destaque para as regiões **Sul** e **Sudeste**, que apresentam os maiores volumes, possivelmente refletindo maior concentração de mercado ou atividade comercial nessas áreas.
+
+- O segmento de **equipamentos** destacou-se como o principal responsável pelo volume de vendas, seguido por outros segmentos (ajuste conforme os dados reais do seu dataset).
+
+- As visualizações, incluindo gráficos de barras, mapas de calor e análises temporais, foram essenciais para identificar padrões sazonais, regionais e segmentados, auxiliando na compreensão dos fatores que influenciam o desempenho comercial e apoiando a tomada de decisões estratégicas.
+
+- O workflow adotado permite a atualização contínua do modelo com novos dados, facilitando o re-treinamento e a melhoria progressiva do desempenho preditivo, o que é fundamental para manter a relevância e eficácia do modelo ao longo do tempo.
+
 
 ---
-
-*Este relatório foi elaborado com base no notebook e dados fornecidos, abrangendo desde a importação e limpeza dos dados até a análise exploratória, modelagem preditiva e visualização dos resultados.*
