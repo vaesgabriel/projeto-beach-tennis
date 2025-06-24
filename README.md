@@ -63,5 +63,33 @@ O dataset utilizado é fictício, criado para fins didáticos e de desenvolvimen
 
 - O workflow adotado permite a atualização contínua do modelo com novos dados, facilitando o re-treinamento e a melhoria progressiva do desempenho preditivo, o que é fundamental para manter a relevância e eficácia do modelo ao longo do tempo.
 
+## Visualizações
+
+### Gráfico 1 – Vendas mensais por ano  
+Este gráfico mostra a evolução das vendas ao longo dos meses, separados por ano, permitindo observar sazonalidades ou tendências de crescimento.  
+![Gráfico 1](Gráficos/1.png)
+
+### Gráfico 2 – Total de vendas por região  
+Aqui vemos o total de vendas acumuladas por região do Brasil, destacando a concentração de vendas no Sudeste e Sul.  
+![Gráfico 2](Gráficos/2.png)
+
+### Gráfico 3 – Participação das subcategorias nas vendas  
+Este gráfico apresenta quais subcategorias de produtos mais contribuíram para o volume total de vendas.  
+![Gráfico 3](Gráficos/3.png)
+
+### Gráfico 4 – Distribuição de vendas por segmento  
+Com este gráfico, visualizamos a divisão das vendas por tipo de canal de venda, como lojas especializadas, e-commerce, entre outros.  
+![Gráfico 4](Gráficos/4.png)
+
+### Gráfico 5 – Total de vendas por estado  
+Distribuição do volume de vendas por unidade federativa, permitindo identificar os estados com maior participação.  
+![Gráfico 5](Gráficos/5.png)
+
+### Gráfico 6 – Comparativo entre segmentos e regiões  
+Análise cruzada entre o tipo de segmento e a região, evidenciando onde cada canal performa melhor.  
+![Gráfico 6](Gráficos/6.png)
+
+### Gráfico 7 – Correlação entre variáveis preditoras  
+Matriz de correlação que mostra as relações entre variáveis utilizadas na modelagem, útil para interpretação estatística.  
 
 ---
